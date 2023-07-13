@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="beige">#EEF5DB</color>
+    <color name="light_gray">#D9D9D9</color>
+    <color name="payne_gray">#4F6367</color>
+    <color name="amaranth_purple">#A61C3C</color>
+    <color name="pumpkin">#FF7318</color>
+    <color name="sky">#74B4FF</color>
 </resources>
