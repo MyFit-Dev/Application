@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/nav_diet"
+        android:icon="@drawable/diet_icon"
+        android:title="@string/navigation_diet" />
+    <item
+        android:id="@+id/nav_exercise"
+        android:icon="@drawable/exercise_icon"
+        android:title="@string/navigation_exercise" />
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home_icon"
+        android:title="@string/navigation_home" />
+    <item
+        android:id="@+id/nav_statistics"
+        android:icon="@drawable/statistics_icon"
+        android:title="@string/navigation_activity" />
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/settings_icon"
+        android:title="@string/navigation_settings" />
 </menu>
