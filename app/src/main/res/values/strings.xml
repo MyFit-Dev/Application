@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MyFit</string>
+
+    <string name="homepage_title">MyFit</string>
+    <string name="homepage_subtitle">Your personal fitness assistant</string>
+
+    <string name="navigation_home" />
+    <string name="navigation_diet" />
+    <string name="navigation_exercise" />
+    <string name="navigation_activity" />
+    <string name="navigation_settings" />
 </resources>
