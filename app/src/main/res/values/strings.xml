@@ -1,4 +1,6 @@
 <resources>
+    <string name="global_null" />
+
     <string name="app_name">MyFit</string>
 
     <string name="homepage_title">MyFit</string>
@@ -9,4 +11,6 @@
     <string name="navigation_exercise" />
     <string name="navigation_activity" />
     <string name="navigation_settings" />
+
+    <string name="alt_homepage_scrollview">Homepage</string>
 </resources>
