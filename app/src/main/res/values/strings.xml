@@ -12,5 +12,13 @@
     <string name="navigation_activity" />
     <string name="navigation_settings" />
 
+    <string name="homepage_diet_title"><b>Alimentazione</b></string>
+    <string name="homepage_diet_button">Aggiungi</string>
+
+    <string name="diet_calories">Calorie</string>
+    <string name="diet_carbs">Carboidrati</string>
+    <string name="diet_proteins">Proteine</string>
+    <string name="diet_fats">Grassi</string>
+
     <string name="alt_homepage_scrollview">Homepage</string>
 </resources>
