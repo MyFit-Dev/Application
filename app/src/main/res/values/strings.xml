@@ -12,9 +12,17 @@
     <string name="navigation_activity" />
     <string name="navigation_settings" />
 
+    <string name="date_yesterday"><b>Ieri</b></string>
+    <string name="date_today"><b>Oggi</b></string>
+    <string name="date_tomorrow"><b>Domani</b></string>
+
     <string name="homepage_diet_title"><b>Alimentazione</b></string>
     <string name="homepage_diet_button">Aggiungi</string>
 
+
+    <string name="diet_goal"><b>Obbiettivo</b></string>
+    <string name="diet_food"><b>Alimenti</b></string>
+    <string name="diet_exercise"><b>Esercizio</b></string>
     <string name="diet_calories">Calorie</string>
     <string name="diet_carbs">Carboidrati</string>
     <string name="diet_proteins">Proteine</string>

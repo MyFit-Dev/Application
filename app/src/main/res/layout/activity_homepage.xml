@@ -39,6 +39,7 @@
 
                 <TextView
                     android:id="@+id/page_title"
+                    android:fontFamily="@font/inter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="17dp"
@@ -52,6 +53,7 @@
 
                 <TextView
                     android:id="@+id/title_separator"
+                    android:fontFamily="@font/inter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="3dp"
@@ -65,6 +67,7 @@
 
                 <TextView
                     android:id="@+id/title_plan"
+                    android:fontFamily="@font/inter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="3dp"
@@ -112,6 +115,24 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:id="@+id/date"
+                    android:fontFamily="@font/inter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/date_today"
+                    android:textSize="25sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
                 android:layout_height="225dp">
 
                 <ImageView
@@ -122,149 +143,173 @@
                     android:layout_marginEnd="17dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0"
-                    app:srcCompat="@drawable/red_box" />
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@drawable/simple_box" />
 
                 <TextView
                     android:id="@+id/diet_title"
+                    android:fontFamily="@font/inter"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
                     android:letterSpacing="0.02"
                     android:text="@string/homepage_diet_title"
                     android:textColor="@color/white"
-                    android:textSize="20sp"
+                    android:textSize="23sp"
                     app:layout_constraintStart_toStartOf="@+id/diet_box"
                     app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/diet_carbs_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginBottom="116dp"
-                    android:text="@string/diet_carbs"
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/diet_box"
-                    app:layout_constraintStart_toStartOf="@+id/diet_box" />
-
-                <TextView
-                    android:id="@+id/diet_proteins_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginBottom="92dp"
-                    android:text="@string/diet_proteins"
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/diet_box"
-                    app:layout_constraintStart_toStartOf="@+id/diet_box" />
-
-                <TextView
-                    android:id="@+id/diet_fats_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginBottom="68dp"
-                    android:text="@string/diet_fats"
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/diet_box"
-                    app:layout_constraintStart_toStartOf="@+id/diet_box" />
-
-                <TextView
-                    android:id="@+id/diet_calories_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginBottom="140dp"
-                    android:text="@string/diet_calories"
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/diet_box"
-                    app:layout_constraintStart_toStartOf="@+id/diet_box" />
-
-                <TextView
-                    android:id="@+id/diet_calories"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="110dp"
-                    android:layout_marginBottom="140dp"
-                    android:text="1400 kcal"
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/diet_box"
-                    app:layout_constraintStart_toStartOf="@+id/diet_box" />
-
-                <TextView
-                    android:id="@+id/diet_carbs"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="110dp"
-                    android:layout_marginBottom="116dp"
-                    android:text="161.4 g"
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/diet_box"
-                    app:layout_constraintStart_toStartOf="@+id/diet_box" />
-
-                <TextView
-                    android:id="@+id/diet_proteins"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="110dp"
-                    android:layout_marginBottom="92dp"
-                    android:text="46.9 g"
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/diet_box"
-                    app:layout_constraintStart_toStartOf="@+id/diet_box" />
-
-                <TextView
-                    android:id="@+id/diet_fats"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="110dp"
-                    android:layout_marginBottom="68dp"
-                    android:text="21.3 g"
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/diet_box"
-                    app:layout_constraintStart_toStartOf="@+id/diet_box" />
 
                 <com.github.mikephil.charting.charts.PieChart
                     android:id="@+id/pieChart"
                     android:layout_width="135dp"
                     android:layout_height="135dp"
-                    android:layout_marginEnd="16dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="@+id/diet_box"
-                    app:layout_constraintTop_toTopOf="@+id/diet_box" />
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="50dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/diet_box"
+                    app:layout_constraintStart_toStartOf="@+id/diet_box"
+                    app:layout_constraintTop_toTopOf="@+id/diet_box"
+                    app:layout_constraintVertical_bias="0.385" />
 
-                <Button
-                    android:id="@+id/diet_btn"
-                    android:layout_width="130dp"
-                    android:layout_height="41dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginBottom="10dp"
-                    android:backgroundTint="@color/pumpkin"
-                    android:text="@string/homepage_diet_button"
-                    android:textSize="15sp"
-                    app:iconPadding="2dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toStartOf="@+id/diet_box" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/diet_goal_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@+id/diet_box"
+                    app:layout_constraintStart_toEndOf="@+id/pieChart"
+                    app:layout_constraintTop_toTopOf="@+id/pieChart">
+
+                    <TextView
+                        android:id="@+id/diet_goal_title"
+                        android:fontFamily="@font/inter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/diet_goal"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/diet_goal_value"
+                        android:fontFamily="@font/inter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/diet_goal_title"
+                        app:layout_constraintTop_toBottomOf="@+id/diet_goal_title" />
+
+                    <ImageView
+                        android:id="@+id/diet_goal_image"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/diet_goal_value"
+                        app:layout_constraintEnd_toStartOf="@+id/diet_goal_title"
+                        app:layout_constraintTop_toTopOf="@+id/diet_goal_title"
+                        app:srcCompat="@drawable/gray_goal_icon" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/diet_foods_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/diet_exercise_container"
+                    app:layout_constraintStart_toStartOf="@+id/diet_goal_container"
+                    app:layout_constraintTop_toBottomOf="@+id/diet_goal_container">
+
+                    <TextView
+                        android:id="@+id/diet_foods_title"
+                        android:fontFamily="@font/inter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/diet_food"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/diet_foods_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/inter"
+                        android:text="TextView"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/diet_foods_title"
+                        app:layout_constraintTop_toBottomOf="@+id/diet_foods_title" />
+
+                    <ImageView
+                        android:id="@+id/diet_foods_image"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/diet_foods_value"
+                        app:layout_constraintEnd_toStartOf="@+id/diet_foods_title"
+                        app:layout_constraintTop_toTopOf="@+id/diet_foods_title"
+                        app:srcCompat="@drawable/foods" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/diet_exercise_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/pieChart"
+                    app:layout_constraintStart_toStartOf="@+id/diet_foods_container">
+
+                    <TextView
+                        android:id="@+id/diet_exercise_title"
+                        android:fontFamily="@font/inter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/diet_exercise"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/diet_exercise_value"
+                        android:fontFamily="@font/inter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="@+id/diet_exercise_title"
+                        app:layout_constraintTop_toBottomOf="@+id/diet_exercise_title" />
+
+                    <ImageView
+                        android:id="@+id/diet_exercise_image"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginEnd="10dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/diet_exercise_value"
+                        app:layout_constraintEnd_toStartOf="@+id/diet_exercise_title"
+                        app:layout_constraintTop_toTopOf="@+id/diet_exercise_title"
+                        app:srcCompat="@drawable/weights" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteY="341dp">
 
                 <View
                     android:id="@+id/separator_1"
